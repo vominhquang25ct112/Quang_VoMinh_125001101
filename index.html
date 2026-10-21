@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <!-- ======================================================================
+       THẺ META & CẤU HÌNH SEO CHUẨN
+       ====================================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>EcoShop - Thời Trang Bền Vững & Phong Cách Sống Xanh</title>
+  <meta name="description" content="EcoShop - Cửa hàng thời trang bền vững hàng đầu Việt Nam. Chuyên cung cấp các dòng trang phục thiết kế từ 100% sợi hữu cơ tự nhiên, vải lanh linen mộc và denim tái chế cao cấp.">
+  <meta name="keywords" content="EcoShop, thời trang xanh, thời trang bền vững, organic cotton, linen tự nhiên, mua sắm thông minh">
+  <meta name="author" content="Võ Minh Quang - MSSV: 125001101">
+
+  <!-- ======================================================================
+       PHÔNG CHỮ GOOGLE FONTS & ICON FONTAWESOME
+       ====================================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 CDN cho Icons sắc nét -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- ======================================================================
+       TÍCH HỢP CDN ANIMATE.CSS & THƯ VIỆN AOS (ANIMATE ON SCROLL)
+       ====================================================================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- File định kiểu chung style.css (Toàn bộ biến CSS & Design System) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       SEMANTIC TAG: <header> - KHU VỰC ĐẦU TRANG & THANH ĐIỀU HƯỚNG
+       Chứa Logo thương hiệu và thanh menu điều hướng liên kết chính
+       ====================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-wrapper">
+        
+        <!-- Logo Cửa Hàng (Flexbox Item Trái) -->
+        <a href="index.html" class="logo" aria-label="EcoShop Trang Chủ">
+          <span class="logo-icon"><i class="fa-solid fa-leaf"></i></span>
+          <span class="logo-text">Eco<span>Shop</span></span>
+        </a>
+
+        <!-- PURE CSS CHECKBOX HACK CHO MOBILE MENU (100% Thuần CSS, Không Dùng JS) -->
+        <input type="checkbox" id="menuToggle" class="menu-toggle-checkbox" aria-label="Mở hoặc đóng menu điều hướng">
+
+        <!-- SEMANTIC TAG: <nav> - THANH ĐIỀU HƯỚNG LIÊN KẾT GIỮA 3 TRANG -->
+        <nav class="main-nav" role="navigation" aria-label="Điều hướng chính">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link active">Trang chủ</a></li>
+            <li><a href="products.html" class="nav-link">Sản phẩm</a></li>
+            <li><a href="products.html#sale" class="nav-link">Khuyến mãi</a></li>
+            <li><a href="#features" class="nav-link">Giới thiệu</a></li>
+            <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+          </ul>
+        </nav>
+
+        <!-- Nhóm nút tác vụ nhanh (Flexbox Item Phải) -->
+        <div class="header-actions">
+          <a href="products.html" class="icon-btn" aria-label="Tìm kiếm sản phẩm">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          
+          <a href="products.html" class="icon-btn" aria-label="Giỏ hàng mua sắm">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count">3</span>
+          </a>
+          
+          <a href="contact.html" class="icon-btn" aria-label="Tài khoản cá nhân / Liên hệ">
+            <i class="fa-regular fa-user"></i>
+          </a>
+
+          <!-- Nút Hamburger Menu điều khiển Checkbox Hack qua thẻ <label> -->
+          <label for="menuToggle" class="hamburger-toggle" aria-label="Bật tắt menu điều hướng">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       SEMANTIC TAG: <main> - VÙNG NỘI DUNG CHÍNH CỦA TRANG CHỦ
+       ====================================================================== -->
+  <main role="main">
+
+    <!-- --------------------------------------------------------------------
+         1. HERO SECTION: BANNER CHÀO MỪNG LỚN & CTA BUTTON DẪN TỚI PRODUCTS.HTML
+         -------------------------------------------------------------------- -->
+    <section class="hero-section" id="hero" aria-labelledby="heroHeading">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content" data-aos="fade-right" data-aos-duration="800">
+            <div class="hero-badge animate__animated animate__pulse animate__infinite">
+              <i class="fa-solid fa-seedling"></i> 100% Sợi Tự Nhiên & Hữu Cơ
+            </div>
+            
+            <h1 class="hero-title" id="heroHeading">
+              Thời Trang Bền Vững - Định Hình <span>Phong Cách Xanh</span>
+            </h1>
+            
+            <p class="hero-description">
+              EcoShop tự hào mang đến các dòng trang phục cao cấp dệt từ 100% sợi hữu cơ tự nhiên và vải tái sinh thuần khiết. Mỗi thiết kế là một cam kết bảo vệ môi trường, mang lại cảm giác thoáng mát êm dịu và vẻ đẹp thanh lịch vượt thời gian.
+            </p>
+
+            <div class="hero-stats">
+              <div class="hero-stat-item">
+                <i class="fa-solid fa-shield-halved"></i> 15.000+ Khách Hàng Thân Thiết
+              </div>
+              <div class="hero-stat-item">
+                <i class="fa-solid fa-star"></i> 99% Đánh Giá 5 Sao
+              </div>
+              <div class="hero-stat-item">
+                <i class="fa-solid fa-box-open"></i> 100% Đóng Gói Tự Phân Hủy
+              </div>
+            </div>
+            
+            <div class="hero-actions">
+              <!-- Nút CTA liên kết chuyển trang sang products.html -->
+              <a href="products.html" class="btn btn-primary">
+                <span>Khám Phá Bộ Sưu Tập</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#features" class="btn btn-secondary">
+                <i class="fa-solid fa-circle-play"></i>
+                <span>Xem Câu Chuyện Thương Hiệu</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-media" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+            <img 
+              src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80" 
+              alt="Bộ sưu tập thời trang sinh thái bền vững EcoShop với chất liệu tự nhiên thanh lịch" 
+              class="hero-image"
+              loading="eager"
+            >
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         2. FEATURED PRODUCTS SECTION: SẢN PHẨM TIÊU BIỂU TRÊN TRANG CHỦ
+         -------------------------------------------------------------------- -->
+    <section class="products-section" id="featured-products" aria-labelledby="productsHeading">
+      <div class="container">
+        
+        <header class="section-header" data-aos="fade-up" data-aos-duration="800">
+          <span class="section-tag">Bộ Sưu Tập Nổi Bật</span>
+          <h2 class="section-title" id="productsHeading">Sản Phẩm Tiêu Biểu Bán Chạy</h2>
+          <p class="section-description">
+            Những thiết kế được yêu thích nhất trong mùa, tôn vinh nét mộc mạc của sợi lanh tự nhiên và độ mềm mại của sợi cotton hữu cơ.
+          </p>
+        </header>
+
+        <!-- LƯỚI SẢN PHẨM TIÊU BIỂU (CSS GRID) -->
+        <div class="product-grid">
+
+          <!-- SẢN PHẨM 1 -->
+          <article class="product-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <div class="card-image-box">
+              <span class="card-badge">Eco 100%</span>
+              <a href="products.html" class="btn-wishlist" aria-label="Yêu thích Áo Sơ Mi Linen Mộc">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+              <img 
+                src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=600&q=80" 
+                alt="Áo Sơ Mi Linen Mộc Dệt Từ Sợi Cây Lanh Tự Nhiên EcoShop" 
+                class="card-img" 
+                loading="lazy"
+              >
+            </div>
+            <div class="card-details">
+              <span class="card-category">Áo Nam Nữ Thiết Kế</span>
+              <h3 class="card-name">
+                <a href="products.html">Áo Sơ Mi Linen Mộc Dáng Suông Tự Nhiên</a>
+              </h3>
+              <p class="card-desc">
+                Dệt hoàn toàn từ sợi lanh tự nhiên không nhuộm tẩy hóa chất, thoáng khí vượt trội, thấm hút mồ hôi tối ưu.
+              </p>
+              <div class="card-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-count">(186 đánh giá)</span>
+              </div>
+              <div class="card-price-row">
+                <span class="current-price">480.000₫</span>
+                <span class="old-price">600.000₫</span>
+              </div>
+              <a href="products.html" class="btn-add-cart">
+                <i class="fa-solid fa-cart-plus"></i> Xem Ngay & Mua
+              </a>
+            </div>
+          </article>
+
+          <!-- SẢN PHẨM 2 -->
+          <article class="product-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+            <div class="card-image-box">
+              <span class="card-badge sale">-25%</span>
+              <a href="products.html" class="btn-wishlist" aria-label="Yêu thích Đầm Xòe Nữ Thắt Eo Cotton Hữu Cơ">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+              <img 
+                src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=600&q=80" 
+                alt="Đầm Xòe Nữ Thắt Eo Sợi Bông Cotton Hữu Cơ EcoShop" 
+                class="card-img" 
+                loading="lazy"
+              >
+            </div>
+            <div class="card-details">
+              <span class="card-category">Váy Đầm Nữ Sinh Thái</span>
+              <h3 class="card-name">
+                <a href="products.html">Đầm Xòe Nữ Thắt Eo Cotton Hữu Cơ Cao Cấp</a>
+              </h3>
+              <p class="card-desc">
+                Sợi bông organic đạt chứng nhận GOTS, mềm mại nâng niu làn da nhạy cảm, form dáng xòe bay bổng nữ tính.
+              </p>
+              <div class="card-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="rating-count">(124 đánh giá)</span>
+              </div>
+              <div class="card-price-row">
+                <span class="current-price">620.000₫</span>
+                <span class="old-price">820.000₫</span>
+              </div>
+              <a href="products.html" class="btn-add-cart">
+                <i class="fa-solid fa-cart-plus"></i> Xem Ngay & Mua
+              </a>
+            </div>
+          </article>
+
+          <!-- SẢN PHẨM 3 -->
+          <article class="product-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="card-image-box">
+              <span class="card-badge">Tái Chế</span>
+              <a href="products.html" class="btn-wishlist" aria-label="Yêu thích Áo Khoác Denim Tái Sinh">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+              <img 
+                src="https://images.unsplash.com/photo-1551537482-f2075a1d41f2?auto=format&fit=crop&w=600&q=80" 
+                alt="Áo Khoác Denim Cổ Điển Tái Sinh EcoShop" 
+                class="card-img" 
+                loading="lazy"
+              >
+            </div>
+            <div class="card-details">
+              <span class="card-category">Áo Khoác Unisex Bền Vững</span>
+              <h3 class="card-name">
+                <a href="products.html">Áo Khoác Denim Cổ Điển Tái Sinh Thân Thiện</a>
+              </h3>
+              <p class="card-desc">
+                Tái chế từ sợi denim thu hồi theo quy trình khép kín tiết kiệm 80% nước tưới, độ bền vượt trội qua năm tháng.
+              </p>
+              <div class="card-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-count">(230 đánh giá)</span>
+              </div>
+              <div class="card-price-row">
+                <span class="current-price">750.000₫</span>
+                <span class="old-price">950.000₫</span>
+              </div>
+              <a href="products.html" class="btn-add-cart">
+                <i class="fa-solid fa-cart-plus"></i> Xem Ngay & Mua
+              </a>
+            </div>
+          </article>
+
+          <!-- SẢN PHẨM 4 -->
+          <article class="product-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">
+            <div class="card-image-box">
+              <span class="card-badge">Bán Chạy</span>
+              <a href="products.html" class="btn-wishlist" aria-label="Yêu thích Áo Thun Trơn Sợi Tre Bamboo">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+              <img 
+                src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" 
+                alt="Áo Thun Trơn Kháng Khuẩn Sợi Tre Bamboo EcoShop" 
+                class="card-img" 
+                loading="lazy"
+              >
+            </div>
+            <div class="card-details">
+              <span class="card-category">Áo Thun Basic Hằng Ngày</span>
+              <h3 class="card-name">
+                <a href="products.html">Áo Thun Trơn Sợi Tre Bamboo Kháng Khuẩn</a>
+              </h3>
+              <p class="card-desc">
+                Sợi tre bamboo tự nhiên có khả năng kháng khuẩn và chống tia UV đến 98%, co giãn 4 chiều vận động thoải mái.
+              </p>
+              <div class="card-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="rating-count">(358 đánh giá)</span>
+              </div>
+              <div class="card-price-row">
+                <span class="current-price">290.000₫</span>
+                <span class="old-price">390.000₫</span>
+              </div>
+              <a href="products.html" class="btn-add-cart">
+                <i class="fa-solid fa-cart-plus"></i> Xem Ngay & Mua
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Nút kêu gọi hành động dẫn thẳng sang products.html -->
+        <div class="view-more-box" data-aos="fade-up">
+          <a href="products.html" class="btn btn-primary">
+            <span>Xem Toàn Bộ Sản Phẩm Tại Cửa Hàng</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         3. WHY CHOOSE US SECTION (ƯU ĐIỂM CỦA CỬA HÀNG)
+         -------------------------------------------------------------------- -->
+    <section class="features-section" id="features" aria-labelledby="featuresHeading">
+      <div class="container">
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-tag">Cam Kết Sinh Thái</span>
+          <h2 class="section-title" id="featuresHeading">Vì Sao Hơn 15.000 Khách Hàng Chọn EcoShop?</h2>
+          <p class="section-description">
+            Chúng tôi không chỉ bán quần áo, mà cùng bạn xây dựng lối sống xanh bền vững với dịch vụ hậu mãi chu đáo nhất.
+          </p>
+        </header>
+
+        <div class="features-grid">
+          
+          <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h3>Giao Hàng Nhanh 24/7</h3>
+            <p>Cam kết giao hỏa tốc nội thành trong 2 giờ và toàn quốc 24-48 giờ. Sử dụng bao bì giấy sinh học tự phân hủy thân thiện môi trường.</p>
+          </div>
+
+          <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-rotate-left"></i>
+            </div>
+            <h3>Đổi Trả Miễn Phí 30 Ngày</h3>
+            <p>Hỗ trợ đổi size hoặc đổi mẫu mã tận nhà hoàn toàn miễn phí nếu sản phẩm chưa vừa ý. Thủ tục nhanh gọn chỉ trong 1 thao tác.</p>
+          </div>
+
+          <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h3>Cam Kết 100% Chính Hãng</h3>
+            <p>Toàn bộ sản phẩm đạt chứng nhận GOTS và Oeko-Tex Standard 100 quốc tế, hoàn toàn không hóa chất độc hại, an toàn tuyệt đối cho da.</p>
+          </div>
+
+          <div class="feature-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3>Hỗ Trợ Nhiệt Tình 24/7</h3>
+            <p>Đội ngũ chuyên viên phong cách am hiểu chất liệu, sẵn sàng tư vấn chọn size chuẩn xác và hướng dẫn chăm sóc sản phẩm bền đẹp dài lâu.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         4. TESTIMONIALS SECTION (ĐÁNH GIÁ THỰC TẾ TỪ KHÁCH HÀNG)
+         -------------------------------------------------------------------- -->
+    <section class="testimonials-section" id="testimonials" aria-labelledby="testimonialsHeading">
+      <div class="container">
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-tag">Khách Hàng Nói Về Chúng Tôi</span>
+          <h2 class="section-title" id="testimonialsHeading">Cảm Nhận Thực Tế Từ Khách Hàng</h2>
+          <p class="section-description">
+            Sự hài lòng và niềm tin của cộng đồng yêu lối sống xanh là động lực lớn nhất để EcoShop hoàn thiện mỗi ngày.
+          </p>
+        </header>
+
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <p class="testimonial-quote">
+              "Tôi đã chuyển hẳn sang sử dụng quần áo linen của EcoShop từ 2 năm nay. Vải mặc rất nhẹ tênh, giặt nhiều lần mà sợi vẫn đanh chắc, không bị xù lông hay bai nhão. Từng chiếc áo được gói cẩn thận trong hộp giấy mộc và dây thừng gai rất tinh tế!"
+            </p>
+            <div class="testimonial-author">
+              <img 
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" 
+                alt="Chân dung khách hàng Nguyễn Mai Phương - Giám đốc thiết kế nội thất" 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-info">
+                <h4>Nguyễn Mai Phương</h4>
+                <p>Giám Đốc Thiết Kế Nội Thất (Quận 1, TP.HCM)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <p class="testimonial-quote">
+              "Là người làm việc văn phòng máy lạnh cả ngày, chiếc áo thun sợi tre và áo sơ mi linen của shop giải quyết triệt để cảm giác bí bách. Dịch vụ giao hàng cực kỳ chuyên nghiệp, đặt sáng mà đầu giờ chiều đã nhận được tận tay."
+            </p>
+            <div class="testimonial-author">
+              <img 
+                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80" 
+                alt="Chân dung khách hàng Trần Hoàng Long - Kỹ sư phần mềm" 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-info">
+                <h4>Trần Hoàng Long</h4>
+                <p>Kỹ Sư Phần Mềm (Cầu Giấy, Hà Nội)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <p class="testimonial-quote">
+              "Rất thích chiến dịch thu cũ đổi mới của shop để giảm rác thải dệt may. Chiếc đầm cotton hữu cơ mặc vừa vặn, màu sắc tự nhiên nhã nhặn, ai gặp cũng khen thanh lịch. Đây đúng là thương hiệu thời trang xanh tử tế đáng ủng hộ!"
+            </p>
+            <div class="testimonial-author">
+              <img 
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" 
+                alt="Chân dung khách hàng Lê Thùy Linh - Chuyên viên truyền thông sống xanh" 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-info">
+                <h4>Lê Thùy Linh</h4>
+                <p>Chuyên Viên Truyền Thông (Hải Châu, Đà Nẵng)</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SEMANTIC TAG: <footer> - CHÂN TRANG WEB DÙNG CHUNG
+       ====================================================================== -->
+  <footer class="site-footer" id="contact" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <!-- Cột 1: Giới thiệu thương hiệu & Mạng xã hội -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-leaf"></i></span>
+            <span class="logo-text">Eco<span>Shop</span></span>
+          </a>
+          <p class="footer-text">
+            EcoShop tiên phong kiến tạo xu hướng thời trang tuần hoàn, tôn vinh nét đẹp bền vững và trách nhiệm gìn giữ hành tinh xanh cho thế hệ tương lai.
+          </p>
+          <div class="social-links">
+            <a href="https://facebook.com" class="social-btn" aria-label="Facebook EcoShop" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" class="social-btn" aria-label="Instagram EcoShop" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" class="social-btn" aria-label="TikTok EcoShop" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://youtube.com" class="social-btn" aria-label="YouTube EcoShop" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cột 2: Điều hướng nhanh -->
+        <div class="footer-col">
+          <h4>Khám Phá Danh Mục</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Về Thương Hiệu EcoShop</a></li>
+            <li><a href="products.html">Sản Phẩm Linen Mới</a></li>
+            <li><a href="products.html">Bộ Sưu Tập Cotton Hữu Cơ</a></li>
+            <li><a href="#features">Chương Trình Đổi Cũ Lấy Mới</a></li>
+            <li><a href="contact.html">Liên Hệ Hỗ Trợ</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 3: Hỗ trợ khách hàng -->
+        <div class="footer-col">
+          <h4>Chăm Sóc Khách Hàng</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Hướng Dẫn Chọn Size Chuẩn</a></li>
+            <li><a href="contact.html">Chính Sách Vận Chuyển Hỏa Tốc</a></li>
+            <li><a href="contact.html">Quy Định Đổi Trả 30 Ngày</a></li>
+            <li><a href="contact.html">Chính Sách Bảo Mật Thông Tin</a></li>
+            <li><a href="contact.html">Điều Khoản Dịch Vụ Mua Sắm</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 4: Thông tin liên hệ & Giờ mở cửa thực tế -->
+        <div class="footer-col">
+          <h4>Hệ Thống Cửa Hàng & Liên Hệ</h4>
+          <address>
+            <ul class="footer-contact">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span><strong>Showroom 1:</strong> 182 Nguyễn Huệ, P. Bến Nghé, Quận 1, TP. Hồ Chí Minh</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span><strong>Showroom 2:</strong> 45 Tràng Tiền, P. Tràng Tiền, Q. Hoàn Kiếm, TP. Hà Nội</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>Hotline: 1900 6868 - 0988 123 456</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email: contact@ecoshop.vn</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                <span>Giờ mở cửa: 08:30 - 21:30 (Cả tuần & ngày Lễ)</span>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+      </div>
+
+      <!-- Đáy trang: Thông tin bản quyền & Tác giả sinh viên -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 EcoShop Việt Nam. Toàn bộ bản quyền được bảo lưu.</p>
+        <div class="student-tag">
+          Họ & Tên: Võ Minh Quang | MSSV: 125001101 | Lớp: 25CT112
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
